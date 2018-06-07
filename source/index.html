@@ -5,11 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Company</title>
-  <!--<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">-->
   <link rel="preload" href="fonts/vida31pro.otf" as="font">
   <link rel="preload" href="fonts/vida33pro.otf" as="font">
   <link rel="stylesheet" href="css/style.min.css">
-
 </head>
 <body>
   <header class="page-header">
@@ -26,10 +24,18 @@
         <div class="comparing__count">3</div>
       </a>
       <button class="login" type="button" >Личный кабинет</button>
+    </nav>
+    <div class="call-wrap">
       <a href="tel:+70000000000" class="call-back">+7 000 000-00-00</a>
       <button class="phone-icon" type="button">Позвонить</button>
-    </nav>
+    </div>
+    <button class="menu-btn menu-btn--open menu-btn--close">Меню
+      <svg class="menu-btn__picture" width="22.928px" height="21.982px">
+        <use xlink:href="#icon-menu"></use>
+      </svg>
+    </button>
   </header>
+
   <section class="banner">
     <h2 class="visible-hidden">Фото компании</h2>
     <div class="banner__description">
@@ -37,8 +43,11 @@
       <div class="banner__name">Объект №51</div>
     </div>
   </section>
+
   <main class="main-content">
+
     <h2 class="visible-hidden">Основное содержание</h2>
+
     <section class="side-bar">
       <h2 class="visible-hidden">Левое меню</h2>
       <nav class="vertical-nav">
@@ -65,6 +74,7 @@
         </li>
       </ul>
     </section>
+
     <section class="notification-list">
       <h2 class="notification-list__title">Уведомления</h2>
       <article class="notification">
@@ -76,7 +86,7 @@
       <article class="notification">
         <div class="notification__date">21/09/17</div>
         <h3 class="notification__title">Реальная власть как концепция</h3>
-        <p class="notification__text visible-hidden">
+        <p class="notification__text">
           Современная критика выслеживает апогей. Малое колебание амбивалентно. Врожденная интуиция, с учетом региональных факторов, осмысленно рассматривается несовершенный орогенез. Актуализация аккумулирует трагический гений. Параметр Родинга-Гамильтона не зависит от скорости вращения внутреннего кольца подвеса, что не кажется странным, если вспомнить о том, что мы не исключили из рассмотрения центральный голоцен, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Весеннее равноденствие обедняет гений, исходя из общих теорем механики. Освобождение, несмотря на не менее значительную.
         </p>
         <button class="notification__open">Показать текст</button>
@@ -100,9 +110,10 @@
         <button class="notification__open">Показать текст</button>
       </article>
     </section>
+
     <section class="news-list">
       <h2 class="visible-hidden">Новости и акции</h2>
-      <article class="news-item">
+      <article class="news-item news-item--active">
         <h3 class="visible-hidden">Акция</h3>
         <div class="news-item__date">14/07</div>
         <a href="" class="news-item__label">Акция</a>
@@ -141,6 +152,7 @@
         <button class="news-togle__button" id="togle-4">Переключить</button>
       </div>
     </section>
+
     <footer class="page-footer">
       <address class="main-address">
         <div class="social-wrap">
@@ -157,34 +169,35 @@
       <nav class="footer-nav">
         <div class="partition-nav">
           <h3 class="partition-nav__title">Раздел №1</h3>
-          <a class="patrition-nav__item">Подраздел №1</a>
-          <a class="patrition-nav__item">Подраздел №2</a>
-          <a class="patrition-nav__item">Подраздел №3</a>
-          <a class="patrition-nav__item">Подраздел №4</a>
-          <a class="patrition-nav__item">Подраздел №5</a>
-          <a class="patrition-nav__item">Подраздел №6</a>
+          <a class="partition-nav__item">Подраздел №1</a>
+          <a class="partition-nav__item">Подраздел №2</a>
+          <a class="partition-nav__item">Подраздел №3</a>
+          <a class="partition-nav__item">Подраздел №4</a>
+          <a class="partition-nav__item">Подраздел №5</a>
+          <a class="partition-nav__item">Подраздел №6</a>
         </div>
         <div class="partition-nav">
           <h3 class="partition-nav__title">Раздел №2</h3>
-          <a class="patrition-nav__item">Подраздел №1</a>
-          <a class="patrition-nav__item">Подраздел №2</a>
-          <a class="patrition-nav__item">Подраздел №3</a>
-          <a class="patrition-nav__item">Подраздел №4</a>
+          <a class="partition-nav__item">Подраздел №1</a>
+          <a class="partition-nav__item">Подраздел №2</a>
+          <a class="partition-nav__item">Подраздел №3</a>
+          <a class="partition-nav__item">Подраздел №4</a>
         </div>
         <div class="partition-nav">
           <h3 class="partition-nav__title">Раздел №3</h3>
-          <a class="patrition-nav__item">Подраздел №1</a>
-          <a class="patrition-nav__item">Подраздел №2</a>
-          <a class="patrition-nav__item">Подраздел №3</a>
-          <a class="patrition-nav__item">Подраздел №4</a>
-          <a class="patrition-nav__item">Подраздел №5</a>
-          <a class="patrition-nav__item">Подраздел №6</a>
-          <a class="patrition-nav__item">Подраздел №1</a>
-          <a class="patrition-nav__item">Подраздел №2</a>
-          <a class="patrition-nav__item">Подраздел №3</a>
+          <a class="partition-nav__item">Подраздел №1</a>
+          <a class="partition-nav__item">Подраздел №2</a>
+          <a class="partition-nav__item">Подраздел №3</a>
+          <a class="partition-nav__item">Подраздел №4</a>
+          <a class="partition-nav__item">Подраздел №5</a>
+          <a class="partition-nav__item">Подраздел №6</a>
+          <a class="partition-nav__item">Подраздел №1</a>
+          <a class="partition-nav__item">Подраздел №2</a>
+          <a class="partition-nav__item">Подраздел №3</a>
         </div>
       </nav>
     </footer>
+
   </main>
 </body>
 

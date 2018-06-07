@@ -1,7 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
-var less = require("gulp-less");
+var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
@@ -23,8 +23,9 @@ gulp.task("clean-build", function() {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/js/**"
+    "source/fonts/**/*.otf",
+    "source/js/**",
+    "source/*.html"
     ], {
       base: "source"
     })
@@ -32,9 +33,9 @@ gulp.task("copy", function () {
 });
 
 gulp.task("style", function() {
-  gulp.src("source/less/style.less")
+  gulp.src("source/sass/style.scss")
     .pipe(plumber())
-    .pipe(less())
+    .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -87,11 +88,12 @@ gulp.task("serve", function() {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", ["style"]);
+  gulp.watch("source/sass/**/*.scss", ["style"]);
   gulp.watch("source/*.html",["html-include"]).on("change", server.reload);
   //gulp.watch("source/*.html").on("change", server.reload);
 });
 
 gulp.task("build", function(done){
-  run("clean-build", "copy", "style", "images", "webp", "sprite", "html-include", done);
+  run("clean-build", "copy", "style", "images", done);
+  //run("clean-build", "copy", "style", "images", "webp", "sprite", "html-include", done);
 });

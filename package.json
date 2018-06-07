@@ -1,8 +1,8 @@
 {
-  "name": "sedona",
+  "name": "company",
   "version": "14.0.0",
   "private": true,
-  "description": "Личный проект «Седона» от HTML Academy",
+  "description": "Тестовое задание Company",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "8.3.x",
@@ -10,11 +10,11 @@
     "gulp": "3.9.x",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^4.1.0",
-    "gulp-less": "^3.5.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
     "gulp-svgstore": "^6.1.1",
     "gulp-webp": "^3.0.0",
     "posthtml-include": "^1.1.0",
@@ -24,7 +24,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "npm run build && gulp serve"
@@ -40,7 +40,7 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/less/**/*.less"
+    "source/sass/**/*.scss"
   ],
   "engines": {
     "node": "8.11"
