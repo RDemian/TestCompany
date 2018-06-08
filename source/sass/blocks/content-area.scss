@@ -1,0 +1,21 @@
+.content-area {
+  position: relative;
+  box-sizing: inherit;
+  width: $smart-width;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .content-area {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .content-area {
+    width: $desktop-width;
+  }
+}

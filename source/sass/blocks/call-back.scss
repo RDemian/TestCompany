@@ -1,0 +1,25 @@
+.call-back {
+  display: flex;
+  align-items: center;
+  margin-right: 55px;
+}
+
+.call-back__phone {
+  margin-right: 8px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.call-back__icon {
+  border: none;
+  font-size: 0;
+  background-color: inherit;
+  background-image: url("../img/icon-phone.png");
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 58px;
+  cursor: pointer;
+}

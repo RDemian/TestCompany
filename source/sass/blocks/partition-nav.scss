@@ -1,0 +1,55 @@
+.partition-nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #edeeee;
+}
+
+.partition-nav__title {
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.partition-nav__title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.partition-nav__list-item {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .partition-nav {
+    border-bottom: none;
+  }
+
+  .partition-nav__list-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 150px;
+  }
+
+  .partition-nav__title::after {
+    display: none;
+  }
+
+  .partition-nav__item {
+    width: 185px;
+    color: $menu-color;
+  }
+}

@@ -1,0 +1,42 @@
+.main-address {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  margin-bottom: 18px;
+}
+
+.main-address__phone {
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #424242;
+  margin-bottom: 20px;
+}
+
+.main-address__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #424242;
+  margin-bottom: 20px;
+}
+
+.main-address__email {
+  font-size: 16px;
+  line-height: 18px;
+  color: $menu-color;
+  text-decoration: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-address {
+    width: 340px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-address {
+    width: 385px;
+  }
+}

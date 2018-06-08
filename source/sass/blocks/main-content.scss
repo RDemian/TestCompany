@@ -1,0 +1,11 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 56px 40px 81px;
+}
+
+@media (min-width: $desktop-width) {
+  .main-content {
+    flex-direction: row;
+  }
+}

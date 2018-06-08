@@ -1,0 +1,19 @@
+.vertical-nav {
+  display: none;
+}
+
+.vertical-nav__item {
+  text-decoration: none;
+  color: $menu-color;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .vertical-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+}

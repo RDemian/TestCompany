@@ -1,0 +1,28 @@
+.comparing {
+  position: relative;
+  background-color: inherit;
+  background-image: url("../img/icon-compare.png");
+  background-repeat: no-repeat;
+  background-size: 27px 18px;
+  padding-left: 48px;
+  font-size: 24px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $menu-color;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.comparing__count {
+  position: absolute;
+  top: -15px;
+  left: 12px;
+  border-radius: 50%;
+  background-color: $menu-color;
+  width: 22px;
+  height: 22px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}

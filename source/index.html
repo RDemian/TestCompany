@@ -9,119 +9,163 @@
   <link rel="preload" href="fonts/vida33pro.otf" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  <header class="page-header">
-    <div class="main-logo">Company</div>
-    <nav class="site-nav">
-      <a href="" class="site-nav__item">Раздел №1</a>
-      <a href="" class="site-nav__item">Раздел №2</a>
-      <a href="" class="site-nav__item">Раздел №3</a>
-      <a href="" class="site-nav__item">Раздел №4</a>
-      <a href="" class="site-nav__item">Раздел №5</a>
-    </nav>
-    <nav class="user-nav">
-      <a href="" class="comparing">Сравнение
-        <div class="comparing__count">3</div>
-      </a>
-      <button class="login" type="button" >Личный кабинет</button>
-    </nav>
-    <div class="call-wrap">
-      <a href="tel:+70000000000" class="call-back">+7 000 000-00-00</a>
-      <button class="phone-icon" type="button">Позвонить</button>
-    </div>
-    <button class="menu-btn menu-btn--open menu-btn--close">Меню
-      <svg class="menu-btn__picture" width="22.928px" height="21.982px">
-        <use xlink:href="#icon-menu"></use>
-      </svg>
-    </button>
-  </header>
-
-  <section class="banner">
-    <h2 class="visible-hidden">Фото компании</h2>
-    <div class="banner__description">
-      <div class="banner__address">Адрес 123</div>
-      <div class="banner__name">Объект №51</div>
-    </div>
-  </section>
-
-  <main class="main-content">
-
-    <h2 class="visible-hidden">Основное содержание</h2>
-
-    <section class="side-bar">
-      <h2 class="visible-hidden">Левое меню</h2>
-      <nav class="vertical-nav">
-        <a href="" class="vertical-nav__item">Документы</a>
-        <a href="" class="vertical-nav__item">План</a>
-        <a href="" class="vertical-nav__item">Оплата</a>
-        <a href="" class="vertical-nav__item">Стадии</a>
-        <a href="" class="vertical-nav__item">Online</a>
-        <a href="" class="vertical-nav__item">Инструкция</a>
+  <div style="display: none">
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <symbol id="icon-right-arrow" viewBox="0 0 100 100">
+        <path d="M61.4,51.8L45.3,67.9c-0.8,0.8-2,0.8-2.8,0s-0.8-2,0-2.8l14.7-14.7L41.7,34.9
+          c-0.8-0.8-0.8-2,0-2.8s2-0.8,2.8,0L61.4,49C62.2,49.8,62.2,51,61.4,51.8z M88,50c0,21-17,38-38,38S12,71,12,50s17-38,38-38
+          S88,29,88,50z M84,50c0-18.8-15.2-34-34-34S16,31.2,16,50s15.2,34,34,34S84,68.8,84,50z"/>
+      </symbol>
+      <symbol id="icon-fill-arrow" viewBox="0 0 338 338">
+        <path d="M168.537,0.003C75.594,0.003,0,75.606,0,168.54c0,92.924,75.594,168.53,168.537,168.53   c92.925,0,168.537-75.606,168.537-168.53C337.074,75.606,261.461,0.003,168.537,0.003z M224.328,177.265l-94.149,94.131   c-2.408,2.408-5.552,3.615-8.719,3.615c-3.146,0-6.302-1.207-8.713-3.615c-4.819-4.815-4.819-12.622,0-17.438l85.424-85.424   l-85.43-85.428c-4.819-4.807-4.819-12.61,0-17.426c4.816-4.822,12.619-4.822,17.432,0l94.143,94.134   C229.143,164.634,229.143,172.437,224.328,177.265z"/>
+      </symbol>
+    </svg>
+  </div>
+  <div class="content-area">
+    <header class="page-header page-header--nav-hide">
+      <div class="main-logo" >
+        <img src="img/logo.png" alt="Company" class="main-logo__img" width="146" height="41">
+      </div>
+      <nav class="site-nav site-nav--hide">
+        <a href="" class="site-nav__item">Раздел №1</a>
+        <a href="" class="site-nav__item">Раздел №2</a>
+        <a href="" class="site-nav__item">Раздел №3</a>
+        <a href="" class="site-nav__item">Раздел №4</a>
+        <a href="" class="site-nav__item">Раздел №5</a>
       </nav>
-      <a href="" class="notice">Уведомления
-        <div class="notice__count">6</div>
-      </a>
-      <ul class="objects-list">
-        <li class="object-item">
-          <h3 class="object-item__title">Адрес 123</h3>
-          <div class="object-item__info">Адрес 123</div>
-          <a href="" class="object-item__open">Перейти</a>
-        </li>
-        <li class="object-item">
-          <h3 class="object-item__title">Адрес 123</h3>
-          <div class="object-item__info">Адрес 123</div>
-          <a href="" class="object-item__open">Перейти</a>
-        </li>
-      </ul>
+      <nav class="user-nav">
+        <a href="" class="comparing visible-hidden">Сравнение
+          <div class="comparing__count">3</div>
+        </a>
+        <button class="user-login user-login--hide" type="button">Личный кабинет</button>
+      </nav>
+      <div class="call-back">
+        <a href="tel:+70000000000" class="call-back__phone">+7 000 000-00-00</a>
+        <button class="call-back__icon" type="button">Позвонить</button>
+      </div>
+      <button class="menu-btn menu-btn--open">Меню</button>
+    </header>
+
+    <section class="banner">
+      <h2 class="visible-hidden">Фото компании</h2>
+      <div class="banner__description">
+        <div class="banner__address">Адрес 123</div>
+        <div class="banner__object">Объект №51</div>
+      </div>
     </section>
 
-    <section class="notification-list">
-      <h2 class="notification-list__title">Уведомления</h2>
-      <article class="notification">
-        <div class="notification__date">22/09/17</div>
-        <h3 class="notification__title">«Вращательный экваториальный момент — актуальная национальная задача»</h3>
-        <p class="notification__text visible-hidden"></p>
-        <button class="notification__open">Показать текст</button>
-      </article>
-      <article class="notification">
-        <div class="notification__date">21/09/17</div>
-        <h3 class="notification__title">Реальная власть как концепция</h3>
-        <p class="notification__text">
-          Современная критика выслеживает апогей. Малое колебание амбивалентно. Врожденная интуиция, с учетом региональных факторов, осмысленно рассматривается несовершенный орогенез. Актуализация аккумулирует трагический гений. Параметр Родинга-Гамильтона не зависит от скорости вращения внутреннего кольца подвеса, что не кажется странным, если вспомнить о том, что мы не исключили из рассмотрения центральный голоцен, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Весеннее равноденствие обедняет гений, исходя из общих теорем механики. Освобождение, несмотря на не менее значительную.
-        </p>
-        <button class="notification__open">Показать текст</button>
-      </article>
-      <article class="notification">
-        <div class="notification__date">11/08/17</div>
-        <h3 class="notification__title">Из ряда вон выходящий математический маятник: гипотеза и теории</h3>
-        <p class="notification__text visible-hidden"></p>
-        <button class="notification__open">Показать текст</button>
-      </article>
-      <article class="notification">
-        <div class="notification__date">01/08/17</div>
-        <h3 class="notification__title">Межпланетный знак: методология и особенности</h3>
-        <p class="notification__text visible-hidden"></p>
-        <button class="notification__open">Показать текст</button>
-      </article>
-      <article class="notification">
-        <div class="notification__date">24/07/17</div>
-        <h3 class="notification__title">Юрский маховик: ядро или засветка неба?</h3>
-        <p class="notification__text visible-hidden"></p>
-        <button class="notification__open">Показать текст</button>
-      </article>
-    </section>
+    <main class="main-content">
+
+      <h2 class="visible-hidden">Основное содержание</h2>
+
+      <section class="side-bar">
+        <h2 class="visible-hidden">Левое меню</h2>
+        <nav class="vertical-nav">
+          <a href="" class="vertical-nav__item">Документы</a>
+          <a href="" class="vertical-nav__item">План</a>
+          <a href="" class="vertical-nav__item">Оплата</a>
+          <a href="" class="vertical-nav__item">Стадии</a>
+          <a href="" class="vertical-nav__item">Online</a>
+          <a href="" class="vertical-nav__item">Инструкция</a>
+        </nav>
+        <a href="" class="notice">Уведомления
+          <div class="notice__count">6</div>
+        </a>
+        <ul class="objects-list">
+          <li class="object-item">
+            <h3 class="object-item__title">Адрес 123</h3>
+            <div class="object-item__info">Адрес 123</div>
+            <a href="" class="object-item__open">
+              <span class="object-item__open-text">Перейти</span>
+              <svg class="object-item__open-img" width="25" height="25">
+                <use xlink:href="#icon-right-arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="object-item">
+            <h3 class="object-item__title">Адрес 123</h3>
+            <div class="object-item__info">Адрес 123</div>
+            <a href="" class="object-item__open">
+              <span class="object-item__open-text">Перейти</span>
+              <svg class="object-item__open-img" width="25" height="25">
+                <use xlink:href="#icon-right-arrow"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="notifications-list">
+        <h2 class="notifications-list__title">Уведомления</h2>
+        <article class="notification">
+          <div class="notification__date">22/09/17</div>
+          <h3 class="notification__title">«Вращательный экваториальный момент — актуальная национальная задача»</h3>
+          <p class="notification__text visible-hidden"></p>
+          <button class="notification__open-text">Показать текст
+            <svg class="notification__open-img" width="20" height="20">
+              <use xlink:href="#icon-fill-arrow"></use>
+            </svg>
+          </button>
+        </article>
+        <article class="notification">
+          <div class="notification__date">21/09/17</div>
+          <h3 class="notification__title">Реальная власть как концепция</h3>
+          <p class="notification__text">
+            Современная критика выслеживает апогей. Малое колебание амбивалентно. Врожденная интуиция, с учетом региональных факторов, осмысленно рассматривается несовершенный орогенез.<br>Актуализация аккумулирует трагический гений. Параметр Родинга-Гамильтона не зависит от скорости вращения внутреннего кольца подвеса, что не кажется странным, если вспомнить о том, что мы не исключили из рассмотрения центральный голоцен, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Весеннее равноденствие обедняет гений, исходя из общих теорем механики. Освобождение, несмотря на не менее значительную.
+          </p>
+          <button class="notification__open-text">Показать текст
+            <svg class="notification__open-img" width="20" height="20">
+              <use xlink:href="#icon-fill-arrow"></use>
+            </svg>
+          </button>
+        </article>
+        <article class="notification">
+          <div class="notification__date">11/08/17</div>
+          <h3 class="notification__title">Из ряда вон выходящий математический маятник: гипотеза и теории</h3>
+          <p class="notification__text visible-hidden"></p>
+          <button class="notification__open-text">Показать текст
+            <svg class="notification__open-img" width="20" height="20">
+              <use xlink:href="#icon-fill-arrow"></use>
+            </svg>
+          </button>
+        </article>
+        <article class="notification">
+          <div class="notification__date">01/08/17</div>
+          <h3 class="notification__title">Межпланетный знак: методология и особенности</h3>
+          <p class="notification__text visible-hidden"></p>
+          <button class="notification__open-text">Показать текст
+            <svg class="notification__open-img" width="20" height="20">
+              <use xlink:href="#icon-fill-arrow"></use>
+            </svg>
+          </button>
+        </article>
+        <article class="notification">
+          <div class="notification__date">24/07/17</div>
+          <h3 class="notification__title">Юрский маховик: ядро или засветка неба?</h3>
+          <p class="notification__text visible-hidden"></p>
+          <button class="notification__open-text">Показать текст
+            <svg class="notification__open-img" width="20" height="20">
+              <use xlink:href="#icon-fill-arrow"></use>
+            </svg>
+          </button>
+        </article>
+      </section>
+
+    </main>
 
     <section class="news-list">
       <h2 class="visible-hidden">Новости и акции</h2>
       <article class="news-item news-item--active">
         <h3 class="visible-hidden">Акция</h3>
         <div class="news-item__date">14/07</div>
-        <a href="" class="news-item__label">Акция</a>
+        <a href="" class="news-item__label news-item__label--active">Акция</a>
         <p class="news-item__text">
           Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.
         </p>
       </article>
-      <article class="news-item">
+      <article class="news-item news-item--no-display">
         <h3 class="visible-hidden">Новость</h3>
         <div class="news-item__date">14/07</div>
         <a href="" class="news-item__label">Новости</a>
@@ -129,7 +173,7 @@
           Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.
         </p>
       </article>
-      <article class="news-item">
+      <article class="news-item news-item--no-display">
         <h3 class="visible-hidden">Акция</h3>
         <div class="news-item__date">14/07</div>
         <a href="" class="news-item__label">Акции</a>
@@ -137,7 +181,7 @@
           Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.
         </p>
       </article>
-      <article class="news-item">
+      <article class="news-item news-item--no-display">
         <h3 class="visible-hidden">Событие</h3>
         <div class="news-item__date">14/07</div>
         <a href="" class="news-item__label">События</a>
@@ -145,60 +189,66 @@
           Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.
         </p>
       </article>
-      <div class="news-togle">
-        <button class="news-togle__button" id="togle-1">Переключить</button>
-        <button class="news-togle__button" id="togle-2">Переключить</button>
-        <button class="news-togle__button" id="togle-3">Переключить</button>
-        <button class="news-togle__button" id="togle-4">Переключить</button>
+      <div class="news-list__toggle">
+        <button class="news-list__toggle-btn news-list__toggle-btn--active" id="toggle-1">Переключить</button>
+        <button class="news-list__toggle-btn" id="toggle-2">Переключить</button>
+        <button class="news-list__toggle-btn" id="toggle-3">Переключить</button>
+        <button class="news-list__toggle-btn" id="toggle-4">Переключить</button>
       </div>
     </section>
 
     <footer class="page-footer">
       <address class="main-address">
-        <div class="social-wrap">
-          <a href="" class="social-button social-button">Facebook<img src="img/icon-facebook.png" alt="FB" class="social-button__img" width="16" height="15"></a>
-          <a href="" class="social-button">VK<img src="img/icon-vk.png" alt="VK" class="social-button__img" width="20" height="11"></a>
-          <a href="" class="social-button">Instagramm<img src="img/icon-instagramm.png" alt="Instagramm" class="social-button__img" width="16" height="16"></a>
-          <a href="" class="social-button">Ok<img src="img/icon-odnoklas.png" alt="Ok" class="social-button__img" width="10" height="19"></a>
-          <a href="" class="social-button">youtube<img src="img/icon-youtube.png" alt="youtube" class="social-button__img" width="18" height="13"></a>
+        <div class="social-buttons">
+          <a href="" class="social-buttons__item">Facebook<img src="img/icon-facebook.png" alt="FB" class="social-buttons__img" width="16" height="15"></a>
+          <a href="" class="social-buttons__item">VK<img src="img/icon-vk.png" alt="VK" class="social-buttons__img" width="20" height="11"></a>
+          <a href="" class="social-buttons__item">Instagramm<img src="img/icon-instagramm.png" alt="Instagramm" class="social-buttons__img" width="16" height="16"></a>
+          <a href="" class="social-buttons__item">Ok<img src="img/icon-odnoklas.png" alt="Ok" class="social-buttons__img" width="10" height="19"></a>
+          <a href="" class="social-buttons__item">youtube<img src="img/icon-youtube.png" alt="youtube" class="social-buttons__img" width="18" height="13"></a>
         </div>
-        <div class="phone-number">+7 000 000-00-00</div>
-        <div class="address-text">Адрес, улица, дом, корпус</div>
-        <a class="address-email" href="mailto:post@comp.com">post@comp.com</a>
+        <div class="main-address__phone">+7 000 000-00-00</div>
+        <div class="main-address__text">Адрес, улица, дом, корпус</div>
+        <a class="main-address__email" href="mailto:post@comp.com">post@comp.com</a>
       </address>
-      <nav class="footer-nav">
+      <nav class="page-footer__nav">
         <div class="partition-nav">
           <h3 class="partition-nav__title">Раздел №1</h3>
-          <a class="partition-nav__item">Подраздел №1</a>
-          <a class="partition-nav__item">Подраздел №2</a>
-          <a class="partition-nav__item">Подраздел №3</a>
-          <a class="partition-nav__item">Подраздел №4</a>
-          <a class="partition-nav__item">Подраздел №5</a>
-          <a class="partition-nav__item">Подраздел №6</a>
+          <div class="partition-nav__list-item">
+            <a class="partition-nav__item">Подраздел №1</a>
+            <a class="partition-nav__item">Подраздел №2</a>
+            <a class="partition-nav__item">Подраздел №3</a>
+            <a class="partition-nav__item">Подраздел №4</a>
+            <a class="partition-nav__item">Подраздел №5</a>
+            <a class="partition-nav__item">Подраздел №6</a>
+          </div>
         </div>
         <div class="partition-nav">
           <h3 class="partition-nav__title">Раздел №2</h3>
-          <a class="partition-nav__item">Подраздел №1</a>
-          <a class="partition-nav__item">Подраздел №2</a>
-          <a class="partition-nav__item">Подраздел №3</a>
-          <a class="partition-nav__item">Подраздел №4</a>
+          <div class="partition-nav__list-item">
+            <a class="partition-nav__item">Подраздел №1</a>
+            <a class="partition-nav__item">Подраздел №2</a>
+            <a class="partition-nav__item">Подраздел №3</a>
+            <a class="partition-nav__item">Подраздел №4</a>
+          </div>
         </div>
         <div class="partition-nav">
           <h3 class="partition-nav__title">Раздел №3</h3>
-          <a class="partition-nav__item">Подраздел №1</a>
-          <a class="partition-nav__item">Подраздел №2</a>
-          <a class="partition-nav__item">Подраздел №3</a>
-          <a class="partition-nav__item">Подраздел №4</a>
-          <a class="partition-nav__item">Подраздел №5</a>
-          <a class="partition-nav__item">Подраздел №6</a>
-          <a class="partition-nav__item">Подраздел №1</a>
-          <a class="partition-nav__item">Подраздел №2</a>
-          <a class="partition-nav__item">Подраздел №3</a>
+          <div class="partition-nav__list-item">
+            <a class="partition-nav__item">Подраздел №1</a>
+            <a class="partition-nav__item">Подраздел №2</a>
+            <a class="partition-nav__item">Подраздел №3</a>
+            <a class="partition-nav__item">Подраздел №4</a>
+            <a class="partition-nav__item">Подраздел №5</a>
+            <a class="partition-nav__item">Подраздел №6</a>
+            <a class="partition-nav__item">Подраздел №1</a>
+            <a class="partition-nav__item">Подраздел №2</a>
+            <a class="partition-nav__item">Подраздел №3</a>
+          </div>
         </div>
       </nav>
     </footer>
 
-  </main>
+  </div>
 </body>
 
 </html>

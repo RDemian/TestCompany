@@ -1,0 +1,12 @@
+.objects-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .objects-list {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+}

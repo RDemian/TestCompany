@@ -1,0 +1,22 @@
+.menu-btn {
+  position: absolute;
+  right: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 32px;
+  height: 24px;
+  font-size: 0;
+}
+
+.menu-btn--open {
+  background-image: url("../img/icon-menu-open.png");
+  background-repeat: no-repeat;
+  background-size: 32px 21px;
+}
+
+.menu-btn--close {
+  background-image: url("../img/icon-menu-close.png");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+}

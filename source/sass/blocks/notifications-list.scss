@@ -1,0 +1,21 @@
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 78px;
+}
+
+.notifications-list__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 34px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #414141;
+}
+
+@media (min-width: $desktop-width) {
+  .notifications-list {
+    margin: 0;
+  }
+}
