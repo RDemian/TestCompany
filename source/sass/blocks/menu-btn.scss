@@ -1,5 +1,6 @@
 .menu-btn {
   position: absolute;
+  top: 35px;
   right: 40px;
   border: none;
   cursor: pointer;
@@ -18,7 +19,8 @@
 .menu-btn--close {
   background-image: url("../img/icon-menu-close.png");
   background-repeat: no-repeat;
-  background-size: 32px 32px;
+  background-size: 21px 21px;
+  background-position: top center;
 }
 
 @media (min-width: $desktop-width) {

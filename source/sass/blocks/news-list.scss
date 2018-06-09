@@ -1,11 +1,21 @@
+.news-wrap {
+  position: relative;
+  overflow: hidden;
+  background-color: #edeeee;
+  width: 100%;
+  height: 156px;
+  margin-bottom: 40px;
+}
+
 .news-list {
   position: relative;
   display: flex;
   background-color: #edeeee;
   padding: 28px 40px 50px;
-  margin-bottom: 40px;
+  //margin-bottom: 40px;
   height: 156px;
-  overflow: hidden;
+  width: 100%;
+  //overflow: hidden;
 }
 
 .news-list__toggle {
@@ -37,9 +47,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .news-list {
-    padding: 26px 55px 50px;
+  .news-wrap {
     margin-bottom: 36px;
+  }
+
+  .news-list {
+    //left: -250px;
+    padding: 26px 55px 50px;
+    //margin-bottom: 36px;
   }
 
   .news-list__toggle {
@@ -48,8 +63,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .news-wrap {
+    margin-bottom: 36px;
+  }
+
   .news-list {
     padding: 31px 155px 50px;
-    margin-bottom: 36px;
+    //margin-bottom: 36px;
   }
 }

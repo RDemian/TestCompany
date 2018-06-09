@@ -5,6 +5,11 @@
   margin-left: auto;
 }
 
+// меняет выравнивание элемента при открытии меню
+.call-back--left-align {
+  margin-left: 0;
+}
+
 .call-back__phone {
   margin-right: 8px;
   text-decoration: none;
