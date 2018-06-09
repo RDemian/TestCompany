@@ -52,6 +52,26 @@ var openText = function (clickEvt) {
   }
 };
 
+var leafNews = function () {
+
+  var left = newsList.style.left;
+
+  (left === '') ? left = 0 : left;
+  left = parseInt(left); // значение без px
+
+  var positionLeft = left - (startX - endX);
+
+  if (positionLeft < -768) {
+    positionLeft = -768;
+  }
+  if (positionLeft > 0) {
+    positionLeft = 0;
+  }
+
+  newsList.style.left = positionLeft +'px';
+
+};
+
 // События
 // Показ, скрытие текстовых блоков
 for (var btnOpenTxt of btnsOpenText) {
@@ -85,8 +105,11 @@ newsWrap.addEventListener('mousedown', function (evt) {
 newsWrap.addEventListener('mouseup', function (evt) {
 
   endX = evt.pageX;
+  var widthWin = window.innerWidth;
 
-  leafNews();
+  if ((widthWin > 768)&&(widthWin < 1440)) {
+    leafNews();
+  }
 
 });
 
@@ -99,28 +122,18 @@ newsWrap.addEventListener('touchstart', function (evt) {
 newsWrap.addEventListener('touchend', function (evt) {
 
   endX = evt.changedTouches[0].pageX;
-
-  leafNews();
+  var widthWin = window.innerWidth;
+  if ((widthWin > 768)&&(widthWin < 1440)) {
+    leafNews();
+  }
 
 });
 
+window.onresize = function () {
 
-var leafNews = function () {
+  var widthWin = window.innerWidth;
 
-  var left = newsList.style.left;
+  newsList.style.left = 0;
 
-  (left === '') ? left = 0 : left;
-  left = parseInt(left); // значение без px
+};
 
-  var positionLeft = left - (startX - endX);
-
-  if (positionLeft < -768) {
-    positionLeft = -768;
-  }
-  if (positionLeft > 0) {
-    positionLeft = 0;
-  }
-
-  newsList.style.left = positionLeft +'px';
-
-}

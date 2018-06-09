@@ -9,6 +9,7 @@
 
 .news-list {
   position: relative;
+  left: 0;
   display: flex;
   background-color: #edeeee;
   padding: 28px 40px 50px;
@@ -67,6 +68,7 @@
   }
 
   .news-list {
+    left: 0;
     padding: 31px 155px 50px;
     //margin-bottom: 36px;
   }
