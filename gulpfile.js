@@ -87,7 +87,7 @@ gulp.task("serve", function() {
     cors: true,
     ui: false
   });
-  
+
   gulp.watch("source/js/*.js", ["copy"]);
   gulp.watch("source/sass/**/*.scss", ["style"]);
   gulp.watch("source/*.html",["html-include"]).on("change", server.reload);
@@ -95,6 +95,6 @@ gulp.task("serve", function() {
 });
 
 gulp.task("build", function(done){
-  run("clean-build", "copy", "style", "images", done);
+  run("clean-build", "copy", "style", "images", "sprite", "html-include", done);
   //run("clean-build", "copy", "style", "images", "webp", "sprite", "html-include", done);
 });
