@@ -7,3 +7,11 @@
 .user-nav--hide {
   display: none;
 }
+
+@media (min-width: $desktop-width) {
+  .user-nav {
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+  }
+}

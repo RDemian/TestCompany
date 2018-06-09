@@ -8,3 +8,10 @@
   font-size: 0;
   padding-right: 22px;
 }
+
+@media (min-width: $desktop-width) {
+  .social-buttons {
+    margin-left: 9px;
+    margin-bottom: 30px;
+  }
+}

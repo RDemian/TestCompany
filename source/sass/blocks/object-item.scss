@@ -39,7 +39,7 @@
 }
 
 .object-item__open-text {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   font-weight: bold;
   color: $menu-color;
@@ -49,11 +49,19 @@
   fill: $menu-color;
 }
 
+@media (min-width: $tablet-width) {
+  .object-item {
+    &:first-of-type {
+      padding-right: 35px;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .object-item {
     width: auto;
     border-left: none;
-    padding: 35px 0;
+    padding: 36px 0;
     border-top: 1px solid #f1f1f1;
 
     &:first-of-type {

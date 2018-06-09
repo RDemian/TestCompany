@@ -4,7 +4,7 @@
   background-image: url("../img/bg-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: auto, auto;
+  background-size: 100%, auto;
   min-height: 232px;
   width: 100%;
 
@@ -55,13 +55,13 @@
     font-weight: bold;
     color: #777b80;
     background-color: #ffffff;
-    padding: 11px 26px 7px 24px;
+    padding: 11px 26px 4px 24px;
   }
 
   .banner__object {
     font-size: 32px;
-    line-height: 28px;
-    padding: 14px 26px 1px 24px;
+    line-height: 26px;
+    padding: 14px 22px 0 24px;
   }
 }
 
@@ -74,18 +74,17 @@
     }
   }
 
+  .banner__description {
+    left: 92px;
+  }
+
   .banner__address {
-    font-size: 18px;
-    line-height: 16px;
-    font-weight: bold;
-    color: #777b80;
-    background-color: #ffffff;
-    padding: 15px 32px 2px 18px;
+    padding: 13px 24px 0 18px;
   }
 
   .banner__object {
     font-size: 48px;
     line-height: 42px;
-    padding: 19px 40px 9px 21px;
+    padding: 15px 32px 4px 20px;
   }
 }

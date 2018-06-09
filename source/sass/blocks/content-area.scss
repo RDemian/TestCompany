@@ -11,11 +11,13 @@
 @media (min-width: $tablet-width) {
   .content-area {
     width: $tablet-width;
+    padding-top: 92px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .content-area {
     width: $desktop-width;
+    padding-top: 90px;
   }
 }

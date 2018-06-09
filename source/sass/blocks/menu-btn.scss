@@ -20,3 +20,9 @@
   background-repeat: no-repeat;
   background-size: 32px 32px;
 }
+
+@media (min-width: $desktop-width) {
+  .menu-btn {
+    display: none;
+  }
+}

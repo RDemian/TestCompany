@@ -8,7 +8,7 @@
 .notifications-list__title {
   margin: 0;
   margin-bottom: 10px;
-  font-size: 34px;
+  font-size: 36px;
   line-height: 30px;
   font-weight: bold;
   color: #414141;
@@ -17,5 +17,10 @@
 @media (min-width: $desktop-width) {
   .notifications-list {
     margin: 0;
+    padding-bottom: 38px;
+  }
+  .notifications-list__title {
+    font-size: 36px;
+    margin-bottom: 44px;
   }
 }

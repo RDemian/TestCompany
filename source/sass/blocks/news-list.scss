@@ -3,7 +3,7 @@
   display: flex;
   background-color: #edeeee;
   padding: 28px 40px 50px;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   height: 156px;
   overflow: hidden;
 }
@@ -37,7 +37,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .news-list {
+    padding: 26px 55px 50px;
+    margin-bottom: 36px;
+  }
+
   .news-list__toggle {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .news-list {
+    padding: 31px 155px 50px;
+    margin-bottom: 36px;
   }
 }

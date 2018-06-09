@@ -4,8 +4,18 @@
   padding: 56px 40px 81px;
 }
 
+@media (min-width: $tablet-width) {
+  .main-content {
+    padding-top: 54px;
+    padding-bottom: 86px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .main-content {
     flex-direction: row;
+    padding-top: 64px;
+    padding-left: 94px;
+    padding-bottom: 84px;
   }
 }

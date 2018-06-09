@@ -26,3 +26,29 @@
   line-height: 22px;
   text-align: center;
 }
+
+.comparing--hide {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .comparing--hide {
+    display: flex;
+  }
+
+  .comparing {
+    background-size: 18px 13px;
+    background-position: left center;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    color: $menu-color;
+    padding-left: 27px;
+  }
+
+  .comparing__count {
+    transform: scale(0.8);
+    top: -10px;
+    left: 5px;
+  }
+}

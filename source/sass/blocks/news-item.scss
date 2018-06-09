@@ -48,7 +48,7 @@
 }
 
 .news-item__text {
-  margin-top: 12px;
+  margin-top: 15px;
   margin-bottom: 12px;
   font-size: 22px;
   line-height: 28px;
@@ -62,5 +62,32 @@
   .news-item {
     width: 240px;
     margin-right: 60px;
+  }
+
+  .news-item__text {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .news-item__date {
+    margin-right: 4px;
+  }
+
+  .news-item__text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .news-item__label {
+    padding: 0 6px;
+  }
+
+  .news-item__label--active {
+    margin-left: 5px;
+    padding: 0 12px;
   }
 }

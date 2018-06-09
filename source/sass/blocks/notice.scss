@@ -40,6 +40,12 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .notice__count {
+    left: 128px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .notice {
     position: relative;

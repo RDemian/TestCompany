@@ -36,12 +36,17 @@
   .partition-nav {
     border-bottom: none;
   }
+  .partition-nav__title {
+    margin-top: 0;
+    margin-bottom: 13px;
+  }
 
   .partition-nav__list-item {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 150px;
+    margin-bottom: 44px;
   }
 
   .partition-nav__title::after {
@@ -49,7 +54,27 @@
   }
 
   .partition-nav__item {
-    width: 185px;
+    font-size: 14px;
+    line-height: 24px;
+    width: 190px;
     color: $menu-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .partition-nav__title {
+    margin-top: 5px;
+  }
+
+  .partition-nav__item {
+    width: 185px;
+  }
+
+  .partition-nav:nth-of-type(3) {
+    margin-left: 36px;
+
+    .partition-nav__item {
+      width: 202px;
+    }
   }
 }

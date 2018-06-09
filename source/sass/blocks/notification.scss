@@ -27,9 +27,9 @@
 }
 
 .notification__text {
-  margin-top: 8px;
-  margin-bottom: 0;
-  font-family: inherit;
+  margin-top: 9px;
+  margin-bottom: 4px;
+  font-family: "Vida Pro";
   font-size: 16px;
   line-height: 24px;
   width: 464px;
@@ -46,9 +46,43 @@
 }
 
 .notification__open-img {
-  //fill: $menu-color;
   fill: transparent;
   stroke: grey;
   stroke-width: 25px;
   transform: rotate(90deg);
+}
+
+@media (min-width: $tablet-width) {
+  .notification__title {
+    width: 592px;
+  }
+
+  .notification__text {
+    width: 592px;
+  }
+
+  .notification__text {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .notification:first-of-type {
+    padding-bottom: 46px;
+  }
+
+  .notification {
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding-bottom: 23px;
+  }
+
+  .notification__title {
+    width: 826px;
+  }
+
+  .notification__text {
+    width: 745px;
+    margin-bottom: 5px;
+  }
 }

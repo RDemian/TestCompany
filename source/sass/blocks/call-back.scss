@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   margin-right: 55px;
+  margin-left: auto;
 }
 
 .call-back__phone {
@@ -22,4 +23,17 @@
   width: 58px;
   height: 58px;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .call-back {
+    margin-right: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .call-back {
+    margin-right: 10px;
+    margin-left: 25px;
+  }
 }
